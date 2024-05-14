@@ -99,3 +99,7 @@ The following folders from the `blimp_mpc_ros/logs` directory contain the releva
 * `fbl_testing_5_2` contains the trajectory data from the feedback linearization controller without CBFs enabled
 * `cbf_vs_fbl_data_4_27` contains the trajectory data from the aggressive trajectories, for which the feedback linearization controller was used, both with CBFs enabled and with CBFs disabled
 * `videos_5_1` contains the trajectory data from the YouTube videos
+
+The derivation of the math in the paper was performed using the MATLAB Symbolic Toolbox in the following files:
+* `blimp_dynamics_organized.mlx` contains closed-form expressions for the full nonlinear dynamics of the blimp
+* `cbf_fbl_paper_math.mlx` contains the step-by-step math from the paper, including the derivation of feedback linearization, zero dynamics, and the CBFs. Note that the matrix `G` was named `L` in the paper.
