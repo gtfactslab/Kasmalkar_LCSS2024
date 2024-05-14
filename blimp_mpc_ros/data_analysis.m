@@ -166,12 +166,12 @@ function metrics = compute_metrics(file)
     pos_err = pos_err / length(err);
     yaw_err = yaw_err / length(err) * 180/pi;
 
-    roll_osc_rms = rms(x(:, 10))*180/pi;
-    pitch_osc_rms = rms(x(:, 11))*180/pi;
+    roll_osc_max = max(abs(x(:, 10)))*180/pi;
+    pitch_osc_max = max(abs(x(:, 11)))*180/pi;
 
     solve_time = mean(st)/1e9;
     
-    metrics = [control_effort pos_err yaw_err roll_osc_rms pitch_osc_rms solve_time];
+    metrics = [control_effort pos_err yaw_err roll_osc_max pitch_osc_max solve_time];
 end
 
 function plot_data(cbf_file, time_end, plot_title, renderer, sp_start)
