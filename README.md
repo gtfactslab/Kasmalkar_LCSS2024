@@ -49,6 +49,7 @@ where `<algo>` and `<traj>` are specified as above.
 ```
 ros2 run blimp_mpc_ros run_blimp_data <logfile>
 ```
+*Note:* The `Error` columns of the data (`x_error`, `y_error`, etc.) are incorrect due to a bug in the code. However, the error can always be computed by taking the difference between the state data, which is accurately recorded, and the reference trajectory (`x_ref`, `y_ref`, etc.).
 
 ## To generate the plots from the paper
 Run `data_analysis.m` in MATLAB.
