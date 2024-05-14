@@ -5,7 +5,7 @@ This code accompanies our submission to RA-L.
 # Prerequisites
 To replicate the results of our paper requires the [GT-MAB hardware](https://github.com/thedancomplex/open-blimp/) along with an appropriate motion capture system.
 
-This project is a ros2 package.
+This project is a ros2 package. Note that the top-level folder of this repository must be renamed to `blimp_mpc_ros` when installed.
 
 # To install
 Clone this repository into the `src` directory of your ROS workspace.
