@@ -29,6 +29,9 @@ setup(
             'run_lqr_line       = blimp_mpc_ros.run_ctrl_lqr_line:main',
             'run_lqr_triangle   = blimp_mpc_ros.run_ctrl_lqr_triangle:main',
             'run_lqr_helix      = blimp_mpc_ros.run_ctrl_lqr_helix:main',
+            'run_nlmpc_helix    = blimp_mpc_ros.run_ctrl_nlmpc_helix:main',
+            'run_nlmpc_line     = blimp_mpc_ros.run_ctrl_nlmpc_line:main',
+            'run_nlmpc_triangle = blimp_mpc_ros.run_ctrl_nlmpc_triangle:main',
             'run_blimp_sim = blimp_mpc_ros.run_blimp_sim:main',
             'run_blimp_data = blimp_mpc_ros.run_blimp_data:main'
         ],
