@@ -1,6 +1,6 @@
 # Feedback Linearization of an Underacuated Miniature Blimp with Zero Dynamics Mitigation using High Order Control Barrier Functions
 
-This code accompanies our submission to RA-L.
+This code accompanies our submission to L-CSS.
 
 # Prerequisites
 To replicate the results of our paper requires the [GT-MAB hardware](https://github.com/thedancomplex/open-blimp/) along with an appropriate motion capture system.
